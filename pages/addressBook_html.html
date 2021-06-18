@@ -9,6 +9,7 @@
     <title>AddressBook</title>
 </head>
 <body>
+    <!-- UC 1 -->
     <header class="header-content header">
         <div class="logo-content">
             <img src="../assets/image.jpg" alt=" " width="5%">
@@ -20,9 +21,17 @@
     </header>
     <div id="formId" class="form-content">
         <form class="form" action="#" onrest="resetForm" onsubmit="save()">
-            <div class="form-head">PERSON ADDRESS FORM</div>
-            <a href="../pages/homePage.html" class="close-button">
-                <img src="../assets/image1.png" alt=""></a>
+            <!-- UC 2 -->
+            <div class="content">
+                <div class="form-head">PERSON ADDRESS FORM</div>
+                <a href="../pages/homePage.html" class="close-button">
+                    <img src="../assets/image1.png" alt=""></a>
+            </div>
+            <div class="row-content">
+                <label class="label text" for="name">Full Name</label>
+                <input class="input" type="text" id="name" name="name" placeholder="Full Name" required>
+            </div>
+
         </form>
     </div>
 </body>
