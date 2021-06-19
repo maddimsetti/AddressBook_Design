@@ -152,11 +152,16 @@ select {
 }
 
 .column-content {
+    float: left;
     width: 80%;
     display: flex;
     flex-direction: row;
     border: 0px solid grey;
     align-items: center;
+}
+
+.row-content:after {
+    display: flex;
 }
 
 city {
@@ -165,9 +170,16 @@ city {
     flex-direction: column;
 }
 
+.zip {
+    margin-block-start: 5;
+    padding-inline-end: 2%;
+}
+
 .zipcode {
     display: flex;
     flex-direction: column;
+    margin-block-start: 10%;
+
 }
 
 .buttonParent {
@@ -197,6 +209,13 @@ city {
     border: none;
     background-color: grey;
     margin-right: 100px;
+}
+
+error-output {
+    margin-left: 10px;
+    font-size: 12px;
+    font-style: italic;
+    color: red;
 }
 
 

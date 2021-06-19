@@ -30,10 +30,12 @@
             <div class="row-content">
                 <label class="label text" for="name">Full Name</label>
                 <input class="input" type="text" id="name" name="name" placeholder="Full Name" required>
+                <error-output class="text-error" for="text"></error-output>
             </div>
             <div class="row-content">
                 <label class="label text" for="address">Address</label>
-                <textarea class="address" type="address" id="address" name="address" placeholder="Address" style="height:100px" style="width:80%;"></textarea>
+                <input class="address" type="address" id="address" name="address" placeholder="Address" style="height:100px" style="width:80%;">
+                <error-output class="address-error" for="address"></error-output>
             </div>
             <div class="row-content">
                 <div class="column-content">
@@ -96,14 +98,16 @@
                         </select>
                     </div>
                     <div>
-                            <label class="label text" for="zipcode">Zip Code</label>
+                            <label class="label text zip" for="zipcode">Zip Code</label>
                             <input class="zipcode" type="zipcode" id="zipcode" name="zipcode" placeholder="Zip Code" required>
+                            <error-output class="zipcode-error" for="zipcode"></error-output>
                     </div>  
                 </div>     
             </div>
             <div class="row-content">
                 <label class="label text" for="phoneNumber">Phone Number</label>
                 <input class="input" type="phoneNumber" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required>
+                <error-output class="phoneNumber-error" for="phoneNumber"></error-output>
             </div>
             <div class="row-content">
                 <div class="add-reset">
@@ -113,5 +117,7 @@
             </div>
         </form>
     </div>
+    <script defer src="../js/addressBook_form.js"></script>
+    <script defer src="../js/AddressBook.js"></script>
 </body>
 </html>
