@@ -20,7 +20,7 @@
         </div>
     </header>
     <div id="formId" class="form-content">
-        <form class="form" action="#" onrest="resetForm" onsubmit="save()">
+        <form class="form" action="#" onrest="resetForm" onadd="save()">
             <!-- UC 2 -->
             <div class="content">
                 <div class="form-head">PERSON ADDRESS FORM</div>
@@ -31,7 +31,86 @@
                 <label class="label text" for="name">Full Name</label>
                 <input class="input" type="text" id="name" name="name" placeholder="Full Name" required>
             </div>
-
+            <div class="row-content">
+                <label class="label text" for="address">Address</label>
+                <textarea class="address" type="address" id="address" name="address" placeholder="Address" style="height:100px" style="width:80%;"></textarea>
+            </div>
+            <div class="row-content">
+                <div class="column-content">
+                    
+                    <div class="city">
+                        <label class="label text" for="city">City</label>
+                        <select id="city" name="city">
+                            <option value="Select City" disabled selected>Select City</option>
+                            <option value="Nagpur">Nagpur</option>
+                            <option value="Bangalore">Bangalore</option>
+                            <option value="Bhopal">Bhopal</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Gurgaon">Gurgaon</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Indore">Indore</option>
+                            <option value="Jaipur">Jaipur</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Lucknow">Lucknow</option>
+                            <option value="Manali">Manali</option>
+                            <option value="Mohali">Mohali</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Noida">Noida</option>
+                            <option value="Patna">Patna</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Ranchi">Ranchi</option>
+                            <option value="Rohtak">Rohtak</option>
+                        </select>
+                    </div>
+                    
+                    <div class="state">
+                        <label class="label text" for="state">State</label>
+                        <select id="state" name="state">
+                            <option value="Select State" disabled selected>Select State</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chhattisgadh">Chhattisgadh</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Odisha">Odisha</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Tripura">Tripura</option>
+                        </select>
+                    </div>
+                    <div>
+                            <label class="label text" for="zipcode">Zip Code</label>
+                            <input class="zipcode" type="zipcode" id="zipcode" name="zipcode" placeholder="Zip Code" required>
+                    </div>  
+                </div>     
+            </div>
+            <div class="row-content">
+                <label class="label text" for="phoneNumber">Phone Number</label>
+                <input class="input" type="phoneNumber" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required>
+            </div>
+            <div class="row-content">
+                <div class="add-reset">
+                    <button type="add" class="button addButton" id="addButton">Add</button>
+                    <button type="reset" class="resetButton button">Reset</button>
+                </div>
+            </div>
         </form>
     </div>
 </body>
