@@ -51,7 +51,7 @@ class AddressBook {
     }
 
     get zipcode() {
-        return this._zipCode;
+        return this._zipcode;
     }
 
     set zipcode(zipcode) {
