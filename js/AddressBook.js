@@ -1,7 +1,7 @@
 class AddressBook {
 
     get id () {
-        return this._zipCode;
+        return this._id;
     }
 
     set id(id) {

@@ -4,6 +4,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     addressBookList = getAddressBookDataFromStorage();
     document.querySelector(".person-count").textContent = addressBookList.length;
     createInnerHtml();
+    localStorage.removeItem('editAddressBook');
 });
 
 const getAddressBookDataFromStorage = () => {
@@ -35,4 +36,14 @@ const createInnerHtml = () => {
         ;
     }
     document.querySelector('#table-display').innerHTML = innerHtml;   
+}
+
+const remove = (node) => {
+    let addressBookData = addressBookList.find(addressData => addressData._id == node.id);
+    if(!addressBookData) return;
+    const index = addressBookList.map(addressData => addressData._id).indexOf(addressBookData._id);
+    addressBookList.splice(index, 1);
+    localStorage.setItem("AddressBookList", JSON.stringify(addressBookList));
+    document.querySelector(".person-count").textContent = addressBookList.length;
+    createInnerHtml();
 }
